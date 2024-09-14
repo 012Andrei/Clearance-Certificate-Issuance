@@ -1,3 +1,111 @@
+<<<<<<< HEAD
+@font-face {
+    font-family: 'Poppins';
+    src: url('./fonts/Poppins-Regular.ttf') format('truetype');
+    font-weight: normal;
+  }
+  
+  @font-face {
+    font-family: 'Poppins';
+    src: url('./fonts/Poppins-Bold.ttf') format('truetype');
+    font-weight: bold;
+  }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.content {
+    margin-top: 30px;
+    background-color: #ffffff;
+    margin-left: 50px;
+    padding: 20px;
+    transition: margin-left 0.5s;
+}
+
+.datetime-container {
+    padding: 10px;
+    display: flex;
+    font-size: small;
+}
+
+.datetime-container .date{
+    margin-right: 20px;
+}
+
+.content hr{
+    border:.5px solid #9f9f9f;
+    margin-top: 10px;
+}
+
+.quick-links {
+    display: flex;
+    flex-direction: column;
+    overflow-x: auto; /* Enable horizontal scrolling */
+    white-space: nowrap; /* Prevent wrapping */
+}
+
+
+.quick-links ul {
+    display: flex;
+    padding: 0;
+    list-style: none; 
+    margin: 0;
+    white-space: nowrap; /* Prevent wrapping */
+}
+
+.quick-links li {
+    flex: 1; 
+    text-align: center; 
+    margin-left: 10px;
+    margin-right: 20px;
+}
+
+.quick-links ul li a {
+    text-decoration: none;
+    font-size: 15px;
+    color: rgb(97, 97, 97);
+}
+
+.quick-links ul li .fas.fa-file-alt {
+    background-color: rgb(53, 154, 166);
+    border-radius: 5px;
+    color: white;
+    padding: 8px;
+    width: 100px;
+    transition: .3s ease;
+}
+
+.quick-links ul li .fas.fa-file-alt:hover{
+    background-color: #d3d3d3;
+    color: black;
+}
+
+.quick-links, .request-overview, .history-overview{
+    height: 120px;
+    margin: 20px;
+    padding: 15px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+}
+
+
+.content .dashboard-body{
+    background-color: #e0e0e08f;
+    margin: 10px;
+    padding-top: 5px;
+    border-radius: 10px;
+    height: 450px;
+}
+
+=======
 @font-face {
     font-family: 'Poppins';
     src: url('./fonts/Poppins-Regular.ttf') format('truetype');
@@ -103,3 +211,4 @@ body {
     height: 450px;
 }
 
+>>>>>>> 8cba75f0dc825763ee7f91aa308ed5acb179fc88
