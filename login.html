@@ -13,15 +13,15 @@
     </div>
 
     <div class="login-container">
-      <form action="login.php" method="post">
+      <form id="loginForm">
         <h1>LOG IN</h1>
 
         <div class="input-container">
-          <input type="text" name="username" placeholder="" required />
+          <input type="text" id="username" name="username" placeholder="" required />
           <label for="username" class="uname">Username</label>
         </div>
         <div class="input-container">
-          <input type="password" id="password" name="password"  placeholder=" " required />
+          <input type="password" id="password" name="password" placeholder=" " required />
           <label for="password" class="password">Password</label>
         </div>
         <button type="submit">Log in</button>
@@ -41,5 +41,29 @@
         </div>
       </form>
     </div>
+
+    <script>
+      // JavaScript function to handle form submission
+      document.getElementById("loginForm").addEventListener("submit", function (event) {
+        event.preventDefault(); // Prevent the form from submitting normally
+
+        // Hardcoded credentials for login (you can customize this)
+        const validUsername = "admin";
+        const validPassword = "password123";
+
+        // Get the values entered by the user
+        const username = document.getElementById("username").value;
+        const password = document.getElementById("password").value;
+
+        // Check if the username and password are correct
+        if (username === validUsername && password === validPassword) {
+          // If credentials are valid, redirect to index.html
+          window.location.href = "index.html";
+        } else {
+          // Display an error message if the credentials are wrong
+          alert("Invalid username or password!");
+        }
+      });
+    </script>
   </body>
 </html>
