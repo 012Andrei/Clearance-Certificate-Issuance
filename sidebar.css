@@ -97,7 +97,7 @@
     left: 50%;
     transform: translateX(-50%);
     transition: transform 0.1s ease;
-    padding: 10px;
+    padding: 5px;
     padding-left: 20px;
     display: flex; 
     align-items: center; 

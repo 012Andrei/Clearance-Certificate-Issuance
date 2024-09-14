@@ -5,13 +5,12 @@
     justify-content: center;
     align-items: center;
     background-color: #ffffff;
-    padding: 15px;
+    padding: 10px;
     color: rgb(0, 0, 0);
     position: fixed;
     top: 0;
     width: 100%;
     z-index: 1;
-    margin-bottom: 60px;
 }
 
 .logo {
@@ -29,7 +28,7 @@
 }
 
 .nav-links li {
-    margin-left: 50px;
+    margin-left: 30px;
 }
 
 .nav-links li a {

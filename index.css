@@ -22,7 +22,7 @@ body {
 
 
 .content {
-    margin-top: 60px;
+    margin-top: 30px;
     background-color: #ffffff;
     margin-left: 50px;
     padding: 20px;
@@ -40,5 +40,66 @@ body {
 }
 
 .content hr{
-    border:1px solid #575757;
+    border:.5px solid #9f9f9f;
+    margin-top: 10px;
 }
+
+.quick-links {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.quick-links ul {
+    display: flex;
+    padding: 0;
+    list-style: none; 
+}
+
+.quick-links li {
+    flex: 1; 
+    text-align: center; 
+}
+
+.quick-links ul li a {
+    text-decoration: none;
+    font-size: 15px;
+    color: rgb(97, 97, 97);
+}
+
+.quick-links ul li .req{
+    margin-top: 10px;
+    background-color: rgb(53, 154, 166);
+    border-radius: 10px;
+    color: white;
+    margin-left: 150px;
+    padding: 10px;
+    width: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .3s ease;
+}
+
+.quick-links ul li .req:hover{
+    background-color: #d3d3d3;
+    color: black;
+}
+
+.quick-links, .request-overview, .history-overview{
+    height: 120px;
+    margin: 20px;
+    padding: 15px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+}
+
+
+.content .dashboard-body{
+    background-color: #e0e0e08f;
+    margin: 10px;
+    padding-top: 5px;
+    border-radius: 10px;
+    height: 450px;
+}
+
