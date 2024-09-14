@@ -49,21 +49,9 @@ body {
     flex-direction: column;
     overflow-x: auto; /* Enable horizontal scrolling */
     white-space: nowrap;
-    position: relative; /* Required for sticky to work */
 }
-
-.quick-links .tae {
-    position: sticky;
-    top: 0;
-    background-color: white; /* Ensure it has a background so it remains visible */
-    z-index: 10; /* Keep it above other elements when scrolling */
-    padding: 5px 0; /* Add some padding if needed */
-}
-
-
 
 .quick-links ul {
-    margin-top: 20px;
     display: flex;
     padding: 0;
     list-style: none; 
