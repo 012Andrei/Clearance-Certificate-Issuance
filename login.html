@@ -5,6 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login</title>
     <link rel="stylesheet" href="loginStyle.css" />
+    <style>
+      /* Style for the eye icon */
+      .input-container {
+        position: relative;
+        width: 100%;
+        margin-bottom: 15px;
+      }
+
+      .input-container .show-password {
+        position: absolute;
+        right: 20px;
+        top: 50%;
+        transform: translateY(-50%);
+        cursor: pointer;
+        font-size: 18px;
+        color: #999;
+      }
+    </style>
   </head>
   <body>
     <div class="welcome">
@@ -20,10 +38,14 @@
           <input type="text" id="username" name="username" placeholder="" required />
           <label for="username" class="uname">Username</label>
         </div>
+
         <div class="input-container">
           <input type="password" id="password" name="password" placeholder=" " required />
           <label for="password" class="password">Password</label>
+          <!-- Eye icon for show/hide password -->
+          <span class="show-password" id="togglePassword">&#128065;</span>
         </div>
+
         <button type="submit">Log in</button>
 
         <a href="#">Don't have an account?</a>
@@ -43,6 +65,19 @@
     </div>
 
     <script>
+      // Show/hide password functionality
+      const togglePassword = document.querySelector("#togglePassword");
+      const password = document.querySelector("#password");
+
+      togglePassword.addEventListener("click", function () {
+        // Toggle the type attribute
+        const type = password.getAttribute("type") === "password" ? "text" : "password";
+        password.setAttribute("type", type);
+
+        // Toggle the eye icon
+        this.textContent = type === "password" ? "🙈" : "🐵";
+      });
+
       // JavaScript function to handle form submission
       document.getElementById("loginForm").addEventListener("submit", function (event) {
         event.preventDefault(); // Prevent the form from submitting normally
@@ -53,10 +88,10 @@
 
         // Get the values entered by the user
         const username = document.getElementById("username").value;
-        const password = document.getElementById("password").value;
+        const passwordValue = document.getElementById("password").value;
 
         // Check if the username and password are correct
-        if (username === validUsername && password === validPassword) {
+        if (username === validUsername && passwordValue === validPassword) {
           // If credentials are valid, redirect to index.html
           window.location.href = "index.html";
         } else {
