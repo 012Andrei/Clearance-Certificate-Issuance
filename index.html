@@ -14,7 +14,7 @@
     <nav class="navbar">
         <div class="logo">Logo</div>
         <ul class="nav-links">
-            <li><a href="#"><i class="fa-solid fa-envelope"></i></a></li>
+            <li><a href="#"><i class="fa-solid fa-inbox"></i></a></li>
             <li><a href="#"><i class="fa-solid fa-user"></i></a></li>
         </ul>
     </nav>
@@ -47,7 +47,7 @@
         </div>
         <div class="dashboard-body">
             <div class="quick-links">
-                <p>Quick Links</p>
+                <h4>Quick Links :</h4>
                 <ul>
                     <li><a href="#">Request Now</a><br><i class="fas fa-file-alt"></i></li>
                     <li><a href="#">Pending Request</a><br><p>10</p></li>
@@ -55,8 +55,51 @@
                 </ul>
             </div>
             <div class="overviews">            
-                <div class="column" id="request-overview">
+                <div class="column" id="overview">
                     <p>Request Overview</p>
+                    <table>
+                        <tr>
+                            <th>ID</th>
+                            <th>Document Name</th>
+                            <th>Code</th>
+                            <th>Type</th>
+                            <th>Date Issued</th>
+                            <th>Status</th>
+                            <th></th>
+                        </tr>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>Sample Docs 1</td>
+                                <td>DOC001</td>
+                                <td>PDF</td>
+                                <td>2024-09-14</td>
+                                <td><i class="fa fa-check"></i></td>
+                                <td>approved</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Sample Docs 2</td>
+                                <td>DOC002</td>
+                                <td>PDF</td>
+                                <td>2024-09-14</td>
+                                <td><i class="fa-solid fa-hourglass"></i></td>
+                                <td>pending</td>
+                            </tr>
+                            <tr></tr>
+                                <td>3</td>
+                                <td>Sample Docs 3</td>
+                                <td>DOC003</td>
+                                <td>PDF</td>
+                                <td>2024-09-14</td>
+                                <td><i class="fa-solid fa-ban"></i></td>
+                                <td>denied</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="column" id="overview">
+                    <p>History Overview</p>
                     <table>
                         <tr>
                             <th>ID</th>
@@ -83,13 +126,9 @@
                         </tbody>
                     </table>
                 </div>
-                <div class="column" id="history-overview"">
-                    <p>History Overview</p>
-                </div>
             </div>
         </div>
     </div>
-<!-- tae  mo -->
     <script src="script.js"></script>
 </body>
 </html>
