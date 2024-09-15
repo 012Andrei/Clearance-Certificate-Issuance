@@ -51,6 +51,11 @@ body {
     white-space: nowrap;
 }
 
+.quick-links p {
+    font-size: 15px;
+    font-weight: bold;
+}
+
 
 .quick-links ul {
     display: flex;
@@ -100,4 +105,59 @@ body {
     padding-top: 5px;
     border-radius: 10px;
     height: 450px;
+}
+
+.overviews {
+    display: flex;  /* Use flexbox to create a row layout */
+    gap: 20px;  /* Add space between the columns */
+    justify-content: center;
+    margin: 20px;
+}
+
+.overviews .column {
+    flex: 1;  /* Each column will take equal space */
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    margin: 10px 0;
+}
+
+.overviews .column p {
+    text-align: center;
+}
+
+#request-overview table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+#request-overview th, #request-overview td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+#request-overview th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+#request-overview tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+#request-overview tr:hover {
+    background-color: #ddd;
+}
+
+#request-overview td {
+    padding: 10px;
+}
+
+#request-overview p {
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
 }
