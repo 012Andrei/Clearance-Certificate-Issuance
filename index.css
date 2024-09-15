@@ -31,11 +31,11 @@ body {
 
 .content .heading-body {
     position: sticky;
-    top: 60px; /* Stick the heading to the top of the viewport */
-    background-color: white; /* Ensure the background color matches */
-    z-index: 1000; /* Ensure it stays above other content */
+    top: 60px; 
+    background-color: white; 
+    z-index: 1000; 
     padding: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow for better visibility */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
     margin-bottom: 20px;
 }
 
@@ -64,6 +64,9 @@ body {
 .quick-links p {
     font-size: 15px;
     font-weight: bold;
+    display: flex;
+    margin-bottom: 5px;
+    justify-content: center;
 }
 
 
@@ -95,6 +98,10 @@ body {
     transition: .3s ease;
 }
 
+.quick-links ul li a:hover{
+    color: #000000;
+}
+
 .quick-links ul .fas.fa-file-alt:hover{
     background-color: #d3d3d3;
     color: black;
@@ -115,6 +122,10 @@ body {
     padding-top: 5px;
     border-radius: 10px;
     height: 450px;
+}
+
+.content .dashboard-body ul p{
+    margin-top: 5px;
 }
 
 .overviews {
