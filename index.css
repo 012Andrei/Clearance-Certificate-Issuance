@@ -29,6 +29,16 @@ body {
     transition: margin-left 0.5s;
 }
 
+.content .heading-body {
+    position: sticky;
+    top: 60px; /* Stick the heading to the top of the viewport */
+    background-color: white; /* Ensure the background color matches */
+    z-index: 1000; /* Ensure it stays above other content */
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow for better visibility */
+    margin-bottom: 20px;
+}
+
 .datetime-container {
     padding: 10px;
     display: flex;
