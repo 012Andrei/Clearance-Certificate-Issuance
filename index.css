@@ -108,14 +108,14 @@ body {
 }
 
 .overviews {
-    display: flex;  /* Use flexbox to create a row layout */
-    gap: 20px;  /* Add space between the columns */
+    display: flex; 
+    gap: 20px;  
     justify-content: center;
     margin: 20px;
 }
 
 .overviews .column {
-    flex: 1;  /* Each column will take equal space */
+    flex: 1;  
     padding: 20px;
     background-color: #fff;
     border-radius: 10px;
