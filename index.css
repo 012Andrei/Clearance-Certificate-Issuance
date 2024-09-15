@@ -152,8 +152,11 @@ body {
     background-color: rgb(53, 154, 166);
     color: #fff;
     margin-top: 5px;
-    padding: 3px;
-    width: 20%;
+    padding: 5px;
+    padding-left:10px ;
+    padding-right:10px ;
+    width: fit-content;
+    font-size: 15px;
     margin-left: 80%;
     border-radius: 10px;
     transition: .3s ease;
